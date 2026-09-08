@@ -1,33 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <title>Lab02 - Warmup</title>
     <style>
+      
       .painting {
         width: 500px;
         height: 500px;
-        background-color: green;
+        background-color: rgb(0, 0, 0);
         display: flex;
         flex-direction: row;
       }
 
-      .left-0{
+      .left-0 {
         width: 25%;
         height: 100%;
-        background-color: blue;
       }
 
-      .right-0{
+      .right-0 {
         width: 75%;
         height: 100%;
-        background-color: red;
+        display: flex;
+        flex-direction: column;
       }
+
+      .right-top {
+        height: 75%;
+        background-color: rgb(189, 14, 14);
+      }
+
+      .right-bottom {
+        height: 25%;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .left-top {
+        height: 28%;
+        width: 88%;
+        background-color: white;
+        margin-bottom: 29px;
+        
+      }
+
+      .left-mid {
+        height: 41.05%;
+        width: 88%;
+        background-color: white;
+        margin-bottom: 15px;
+
+      }
+
+      .left-bot {
+        height: 22%;
+        width: 88%;
+        background-color: rgb(40, 75, 182);
+      }
+
+      .right-bottom-left {
+        height: 88%;
+        width: 80%;
+        background-color: rgb(255, 255, 255);
+        margin-top: 15px;
+      }
+
+      .right-bottom-right {
+        height: 100%;
+        width: 15%;
+        background-color: rgb(143, 52, 52);
+        margin-left: 18.5px;
+      }
+
     </style>
+
   </head>
   <body>
+
     <main class="painting">
-      <section class="left-0"></section>
-      <section class="right-0"></section>
-      </main>
+      
+     <section class="left-0">
+        <section class="left-top"></section>
+        <section class="left-mid"></section>
+        <section class="left-bot"></section>
+      </section>
+
+      <section class="right-0">
+        <section class="right-top"></section>
+        <section class="right-bottom">
+          <section class="right-bottom-left"></section>
+          <section class="right-bottom-right">
+              <section class="right-bottom-left-top"></section>
+              <section class="right-bottom-left-bot"></section>
+            </section>
+        </section>
+      </section>
+      
+    </main>
+
   </body>
 </html>
